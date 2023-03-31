@@ -10,6 +10,10 @@ const CocktailList = () =>
     const [modifiedCocktail, setModifiedCocktail] = useState([])
     const dispatch = useDispatch()
 
+    useEffect(() =>
+    {
+    }, [])
+
 
     return (
         <div>CocktailList</div>
