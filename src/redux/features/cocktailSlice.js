@@ -33,6 +33,4 @@ const cocktailSlice = createSlice({
     }
 })
 
-const cocktailReducer = cocktailSlice.reducer
-
-export default cocktailReducer;
+export default cocktailSlice.reducer
