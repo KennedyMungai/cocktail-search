@@ -8,6 +8,7 @@ const CocktailList = () =>
 {
     const { cocktails, loading } = useSelector((state) => ({ ...state.app }))
     const [modifiedCocktail, setModifiedCocktail] = useState([])
+    const dispatch = useDispatch()
 
 
     return (
