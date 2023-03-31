@@ -22,6 +22,7 @@ const cocktailSlice = createSlice({
         },
         [fetchCocktails.fulfilled]: (state, action) =>
         {
+            state.loading = false
             state.cocktails = action.payload.drinks
         }
     }
