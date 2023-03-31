@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 const CocktailList = () =>
 {
     const { cocktails, loading } = useSelector((state) => ({ ...state.app }))
+    const [modifiedCocktail, setModifiedCocktail] = useState([])
 
 
     return (
