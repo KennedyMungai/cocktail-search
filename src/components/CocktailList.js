@@ -15,6 +15,12 @@ const CocktailList = () =>
         dispatch(fetchCocktails())
     }, [])
 
+    useEffect(() =>
+    {
+
+    }, [])
+
+
 
     return (
         <div>
