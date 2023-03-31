@@ -5,7 +5,14 @@ import './SearchInput.css'
 const SearchInput = () =>
 {
     return (
-        <div>SearchInput</div>
+        <section className="section search">
+            <form action="" className="search-form">
+                <div className="form-control">
+                    <label htmlFor="name">Search Cocktail</label>
+                    <input type="text" id="name" name='name' />
+                </div>
+            </form>
+        </section>
     )
 }
 
