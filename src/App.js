@@ -9,8 +9,10 @@ function App()
 {
   return (
     <div className="App">
-      Hello React
-      <Home />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/cocktail/:id' element={SingleCocktail} />
+      </Routes>
     </div>
   );
 }
