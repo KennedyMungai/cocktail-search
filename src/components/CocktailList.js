@@ -4,7 +4,6 @@ import { fetchCocktails } from '../redux/features/cocktailSlice'
 import { Link } from 'react-router-dom'
 
 
-
 const CocktailList = () =>
 {
     return (
