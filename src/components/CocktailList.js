@@ -46,6 +46,14 @@ const CocktailList = () =>
         }
     }, [cocktails])
 
+    if (loading)
+    {
+        return (
+            <div className="spinner-grow" role='status'>
+                <span className="visually-hidden">Loading...</span>
+            </div>
+        )
+    }
 
 
     return (
