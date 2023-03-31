@@ -4,9 +4,7 @@ const Home = () =>
 {
     return (
         <div>
-            {/* TODO Add the relevant components */}
-            {/* Search input */}
-            {/* Cocktail List */}
+            <p>Home</p>
         </div> >
     )
 }
