@@ -37,6 +37,8 @@ const CocktailList = () =>
                     glass: strGlass
                 }
             })
+
+            setModifiedCocktail(newCocktails)
         }
     }, [cocktails])
 
