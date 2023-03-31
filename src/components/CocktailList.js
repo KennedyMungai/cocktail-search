@@ -17,8 +17,20 @@ const CocktailList = () =>
 
     useEffect(() =>
     {
-
-    }, [])
+        if (cocktails)
+        {
+            const newCocktails = cocktails.map((item) =>
+            {
+                const {
+                    idDrink,
+                    strDrink,
+                    strDrinkThumb,
+                    strAlcoholic,
+                    strGlass
+                } = item
+            })
+        }
+    }, [cocktails])
 
 
 
