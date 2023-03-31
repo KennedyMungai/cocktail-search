@@ -17,7 +17,9 @@ const CocktailList = () =>
 
 
     return (
-        <div>CocktailList</div>
+        <div>
+            <h2>Cocktail List</h2>
+        </div>
     )
 }
 
