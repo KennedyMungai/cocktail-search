@@ -76,6 +76,9 @@ const CocktailList = () =>
                                     <p className="card-text">
                                         {info}
                                     </p>
+                                    <Link to={`/cocktails/${id}`}>
+                                        <button className="btn btn-info">Details</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
