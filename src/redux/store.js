@@ -24,6 +24,11 @@ const cocktailSlice = createSlice({
         {
             state.loading = false
             state.cocktails = action.payload.drinks
+        },
+        [fetchCocktails.rejected]: (state, action) =>
+        {
+            state.loading = false
+            state.cocktails = action.payload
         }
     }
 })
