@@ -73,6 +73,9 @@ const CocktailList = () =>
                                     <h4 className="card-title">
                                         {glass}
                                     </h4>
+                                    <p className="card-text">
+                                        {info}
+                                    </p>
                                 </div>
                             </div>
                         </div>
