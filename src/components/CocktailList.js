@@ -28,6 +28,14 @@ const CocktailList = () =>
                     strAlcoholic,
                     strGlass
                 } = item
+
+                return {
+                    id: idDrink,
+                    name: strDrink,
+                    image: strDrinkThumb,
+                    info: strAlcoholic,
+                    glass: strGlass
+                }
             })
         }
     }, [cocktails])
