@@ -30,24 +30,30 @@ const SingleCocktail = () => {
         strIngredient4,
         strIngredient5,
       } = cocktail[0]
+    
+        const ingredients = [
+          strIngredient1,
+          strIngredient2,
+          strIngredient3,
+          strIngredient4,
+          strIngredient5,
+        ]
+    
+        const newCocktail = {
+          name, 
+          image,
+          info,
+          category,
+          glass,
+          instructions,
+          ingredients
+        }
+    
+        setModifiedCocktail(newCocktail)
     }
-
-    const ingredients = [
-      strIngredient1,
-      strIngredient2,
-      strIngredient3,
-      strIngredient4,
-      strIngredient5,
-    ]
-
-    const newCocktail = {
-      name, 
-      image,
-      info,
-      category,
-      glass,
-      instructions,
-      ingredients
+    else 
+    {
+      setModifiedCocktail(null)
     }
   }, [id, cocktail])
     
