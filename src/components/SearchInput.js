@@ -11,6 +11,11 @@ const SearchInput = () =>
         e.preventDefault()
     }
 
+    const handleChange = (e) =>
+    {
+
+    }
+
     return (
         <section className="section search">
             <form action="" className="search-form" onSubmit={handleSubmit}>
