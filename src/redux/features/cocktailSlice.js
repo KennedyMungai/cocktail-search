@@ -54,6 +54,20 @@ const cocktailSlice = createSlice({
             state.loading = false
             state.error = action.payload
         },
+        [fetchSearchCocktail.pending]: (state, action) => 
+        {
+            state.loading = true
+        },
+        [fetchSearchCocktail.fulfilled]: (state, action) =>
+        {
+            state.loading = false
+            state.cocktail = action.payload.drinks
+        },
+        [fetchSearchCocktail.rejected]: (state, action) =>
+        {
+            state.loading = false
+            state.error = action.payload
+        },
     }
 })
 
