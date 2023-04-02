@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import './SearchInput.css'
 import { fetchSearchCocktail } from '../redux/features/cocktailSlice'
+import { useDispatch } from 'react-redux'
 
 
 const SearchInput = () =>
