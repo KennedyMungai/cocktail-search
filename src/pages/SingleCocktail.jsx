@@ -9,6 +9,11 @@ const SingleCocktail = () => {
   const [modifiedCocktail, setModifiedCocktail] = useState([])
   const dispatch = useDispatch()
 
+  useEffect(() => {
+    
+  }, [id])
+  
+
   return (
     <div>
         <h2>Single Cocktail</h2>
