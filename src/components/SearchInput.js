@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux'
 const SearchInput = () =>
 {
     const searchValue = useRef()
+    const dispatch = useDispatch()
 
     const handleSubmit = (e) =>
     {
