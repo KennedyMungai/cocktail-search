@@ -11,6 +11,11 @@ export const fetchSingleCocktail = createAsyncThunk("cocktails/fetchSingleCockta
     return fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?i=${id}`).then((res) => res.json())
 })
 
+export const fetchSearchCocktail = createAsyncThunk("cocktails/searchCocktails", async ({ searchText }) =>
+{
+    return fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchText}`).then((res) => res.json())
+})
+
 
 const cocktailSlice = createSlice({
     name: "cocktails",
