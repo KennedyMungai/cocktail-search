@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 const SingleCocktail = () => {
   const {cocktail, loading} = useSelector((state) => ({...state.app}))
+  const [modifiedCocktail, setModifiedCocktail] = useState([])
   const dispatch = useDispatch()
 
   return (
