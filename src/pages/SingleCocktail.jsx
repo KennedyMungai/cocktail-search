@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux'
 
 
 const SingleCocktail = () => {
+  const {cocktail, loading} = useSelector((state) => ({...state.app}))
+
   return (
     <div>
         <h2>Single Cocktail</h2>
