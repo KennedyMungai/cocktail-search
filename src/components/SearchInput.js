@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import './SearchInput.css'
+import { fetchSearchCocktail } from '../redux/features/cocktailSlice'
 
 
 const SearchInput = () =>
@@ -13,7 +14,7 @@ const SearchInput = () =>
 
     const handleChange = (e) =>
     {
-
+        const searchText = searchValue.current.value
     }
 
     return (
