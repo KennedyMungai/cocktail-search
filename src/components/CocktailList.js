@@ -55,6 +55,10 @@ const CocktailList = () =>
         )
     }
 
+    if (!cocktails)
+    {
+        return <h2>No Cocktails matched your search</h2>
+    }
 
     return (
         <div className="container">
