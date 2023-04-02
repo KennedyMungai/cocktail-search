@@ -9,7 +9,7 @@ const SearchInput = () =>
 
     return (
         <section className="section search">
-            <form action="" className="search-form">
+            <form action="" className="search-form" onSubmit={handleSubmit}>
                 <div className="form-control">
                     <label htmlFor="name">Search Cocktail</label>
                     <input type="text" id="name" name='name' ref={searchValue} />
