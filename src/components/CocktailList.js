@@ -13,7 +13,7 @@ const CocktailList = () =>
     useEffect(() =>
     {
         dispatch(fetchCocktails())
-    }, [])
+    }, [dispatch])
 
     useEffect(() =>
     {
@@ -44,7 +44,7 @@ const CocktailList = () =>
         {
             setModifiedCocktail([])
         }
-    }, [cocktails])
+    }, [cocktails, dispatch])
 
     if (loading)
     {

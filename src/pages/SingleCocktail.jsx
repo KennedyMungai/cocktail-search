@@ -12,7 +12,7 @@ const SingleCocktail = () => {
 
   useEffect(() => {
     dispatch(fetchSingleCocktail({id}))
-  }, [id])
+  }, [id, dispatch])
 
   useEffect(() => {
     if(cocktail.length > 0)
@@ -55,7 +55,7 @@ const SingleCocktail = () => {
     {
       setModifiedCocktail(null)
     }
-  }, [id, cocktail])
+  }, [id, cocktail, dispatch])
     
   if(!modifiedCocktail)
   {
@@ -117,7 +117,7 @@ const SingleCocktail = () => {
                     </p>
                     <p>
                       <span className="drink-data">Ingredients: </span> 
-                      {ingredients.map((ingredient, index) => 
+                      {ingredients && ingredients.map((ingredient, index) => 
                       { 
                         return ingredient ? <span key={index}>{ingredient}</span> : null
                       })}
