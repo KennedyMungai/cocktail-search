@@ -8,6 +8,7 @@ const SingleCocktail = () => {
   const {cocktail, loading} = useSelector((state) => ({...state.app}))
   const [modifiedCocktail, setModifiedCocktail] = useState([])
   const dispatch = useDispatch()
+  const {id} = useParams()
 
   useEffect(() => {
     
