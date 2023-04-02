@@ -72,6 +72,33 @@ const SingleCocktail = () => {
       instructions,
       ingredients
     } = modifiedCocktail
+
+    return (
+      <>
+        {
+          loading ? 
+            (
+            <div className='spinner-grow' role='status'>
+              <span className="visually-hidden">
+                Loading...
+              </span>
+            </div>
+            ) :
+            (
+              <section className="section cocktail-section">
+                <Link to={'/'}>
+                  <button 
+                    className="btn btn-danger"
+                    style={{marginTop: '2rem'}}
+                  >
+                    Go Back
+                  </button>
+                </Link>
+              </section>
+            )
+        }
+      </>
+    )
   }
 }
 
