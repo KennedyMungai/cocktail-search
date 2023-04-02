@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchCocktails } from '../redux/features/cocktailSlice'
 import { Link } from 'react-router-dom'
+import { fetchCocktails } from '../redux/features/cocktailSlice'
 
 
 const CocktailList = () =>
