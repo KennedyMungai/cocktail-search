@@ -16,7 +16,7 @@ const SearchInput = () =>
             <form action="" className="search-form" onSubmit={handleSubmit}>
                 <div className="form-control">
                     <label htmlFor="name">Search Cocktail</label>
-                    <input type="text" id="name" name='name' ref={searchValue} />
+                    <input type="text" id="name" name='name' ref={searchValue} onChange={handleChange} />
                 </div>
             </form>
         </section>
