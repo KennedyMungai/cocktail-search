@@ -6,6 +6,10 @@ const SearchInput = () =>
 {
     const searchValue = useRef()
 
+    const handleSubmit = (e) =>
+    {
+        e.preventDefault()
+    }
 
     return (
         <section className="section search">
