@@ -57,12 +57,22 @@ const SingleCocktail = () => {
     }
   }, [id, cocktail])
     
-
-  return (
-    <div>
-        <h2>Single Cocktail</h2>
-    </div>
-  )
+  if(!modifiedCocktail)
+  {
+    return <h2 className="section-title">No Cocktail to display</h2>
+  }
+  else
+  {
+    const {
+      name,
+      image,
+      category,
+      info,
+      glass,
+      instructions,
+      ingredients
+    } = modifiedCocktail
+  }
 }
 
 export default SingleCocktail
