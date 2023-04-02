@@ -15,7 +15,22 @@ const SingleCocktail = () => {
   }, [id])
 
   useEffect(() => {
-
+    if(cocktail.length > 0)
+    {
+      const {
+        strDrink: name,
+        strDrinkThumb: image,
+        strAlcoholic: info,
+        strCategory : category,
+        strGlass: glass,
+        strInstructions: instructions,
+        strIngredient1,
+        strIngredient2,
+        strIngredient3,
+        strIngredient4,
+        strIngredient5,
+      } = cocktail[0]
+    }
   }, [id, cocktail])
     
 
