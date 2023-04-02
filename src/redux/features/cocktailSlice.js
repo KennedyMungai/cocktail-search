@@ -42,7 +42,7 @@ const cocktailSlice = createSlice({
         [fetchSingleCocktail.fulfilled]: (state, action) =>
         {
             state.loading = false
-            state.cocktails = action.payload.drinks
+            state.cocktail = action.payload.drinks
         },
         [fetchSingleCocktail.rejected]: (state, action) =>
         {
