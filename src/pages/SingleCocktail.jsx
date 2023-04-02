@@ -13,7 +13,11 @@ const SingleCocktail = () => {
   useEffect(() => {
     dispatch(fetchSingleCocktail({id}))
   }, [id])
-  
+
+  useEffect(() => {
+
+  }, [id, cocktail])
+    
 
   return (
     <div>
