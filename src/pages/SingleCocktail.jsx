@@ -11,7 +11,7 @@ const SingleCocktail = () => {
   const {id} = useParams()
 
   useEffect(() => {
-    
+    dispatch(fetchSingleCocktail({id}))
   }, [id])
   
 
