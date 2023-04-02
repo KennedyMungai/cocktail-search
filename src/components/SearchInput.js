@@ -17,6 +17,7 @@ const SearchInput = () =>
     const handleChange = (e) =>
     {
         const searchText = searchValue.current.value
+        dispatch(fetchSearchCocktail({ searchText }))
     }
 
     return (
